@@ -1,0 +1,45 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{subcaption}
+\newcommand{\RN}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+\captionsetup[figure]{labelsep=period}
+\captionsetup[subfigure]{labelformat=simple} % default is 'parens'
+\renewcommand\thesubfigure{\thefigure.\alph{subfigure}.}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+\newtheorem{corollary}{Corollary}
+
+\begin{document}
+    
+\title{\bfseries{Query expansion using language models}}
+\author{Flavio Forenza}
+\date\today
+\maketitle
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.2\linewidth]{images/logoUnimi2.png}
+  \centering
+\end{figure}
+
+\begin{abstract}
+    Un abstract
+\end{abstract}
+
+\input{Introduction.tex}
+
+\newpage
+\input{chapters/chapter_1.tex}
+
+\newpage
+\bibliographystyle{abbrv}
+\bibliography{Bibliography}
+
+\end{document}
