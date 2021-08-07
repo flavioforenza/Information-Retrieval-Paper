@@ -3,44 +3,52 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: abbrv.bst
 Database file #1: Bibliography.bib
-You've used 1 entry,
+Warning--I didn't find a database entry for "0747815530"
+Warning--empty school in 04
+Warning--empty booktitle in 03
+Warning--empty booktitle in 02
+Warning--empty booktitle in 06
+Warning--empty booktitle in 01
+Warning--empty booktitle in 05
+You've used 6 entries,
             2118 wiz_defined-function locations,
-            503 strings with 3917 characters,
-and the built_in function-call counts, 578 in all, are:
-= -- 60
-> -- 28
-< -- 1
-+ -- 11
-- -- 10
-* -- 30
-:= -- 85
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 8
+            530 strings with 4464 characters,
+and the built_in function-call counts, 2462 in all, are:
+= -- 253
+> -- 77
+< -- 5
++ -- 32
+- -- 24
+* -- 100
+:= -- 333
+add.period$ -- 18
+call.type$ -- 6
+change.case$ -- 29
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 32
-empty$ -- 31
-format.name$ -- 10
-if$ -- 132
+cite$ -- 12
+duplicate$ -- 151
+empty$ -- 194
+format.name$ -- 24
+if$ -- 586
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 2
-pop$ -- 9
+int.to.str$ -- 6
+missing$ -- 5
+newline$ -- 33
+num.names$ -- 12
+pop$ -- 54
 preamble$ -- 1
-purify$ -- 7
+purify$ -- 24
 quote$ -- 0
-skip$ -- 36
+skip$ -- 154
 stack$ -- 0
-substring$ -- 25
-swap$ -- 22
-text.length$ -- 1
+substring$ -- 124
+swap$ -- 83
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
-warning$ -- 0
-while$ -- 3
-width$ -- 2
-write$ -- 13
+type$ -- 24
+warning$ -- 6
+while$ -- 18
+width$ -- 7
+write$ -- 62
+(There were 7 warnings)

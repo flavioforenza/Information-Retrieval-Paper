@@ -1,10 +1,36 @@
 \begin{thebibliography}{1}
 
-\bibitem{0747815530}
-J.{Li}, M.D.{Levine}, X.{An}, X.{Xu}, and H.{He}.
-\newblock Visual saliency based on scale-space analysis in the frequency
-  domain.
-\newblock {\em IEEE Trans. Pattern Anal. Mach. Intell, vol. 35, no. 4}, page
-  996–1010, Apr. 2013.
+\bibitem{04}
+G.{Alexander}.
+\newblock {\em Log-Linear Interpolation of Language Models}.
+\newblock PhD thesis, 2000.
+
+\bibitem{03}
+H.{Zaragoza}, D.{Hiemstra}, and M.{Tipping}.
+\newblock Bayesian extension to the language model for ad hoc information
+  retrieval.
+\newblock page 4–9, 2003.
+
+\bibitem{02}
+J.{Lafferty} and C.{Zhai}.
+\newblock Document language models, query models, and risk minimization for
+  information retrieval.
+\newblock page 111–119, 2001.
+
+\bibitem{06}
+J.M.{Ponte} and W.B.{Croft}.
+\newblock A language modeling approach to information retrieval.
+\newblock page 275–281, 1998.
+
+\bibitem{01}
+R.{Cummins} and C.{O'Riordan}.
+\newblock Evolving co-occurrence based query expansion schemes in information
+  retrieval using genetic programming.
+\newblock pages 137--146, 2005.
+
+\bibitem{05}
+S.F.{Chen} and J.{Goodman}.
+\newblock An empirical study of smoothing techniques for language modeling.
+\newblock page 310–318, 1996.
 
 \end{thebibliography}
