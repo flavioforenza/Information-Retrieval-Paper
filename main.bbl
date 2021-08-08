@@ -28,9 +28,21 @@ R.{Cummins} and C.{O'Riordan}.
   retrieval using genetic programming.
 \newblock pages 137--146, 2005.
 
+\bibitem{07}
+S.E.{Robertson} and K.{Spärck Jones}.
+\newblock Relevance weighting of search terms.
+\newblock {\em Journal of the American Society for Information Science}, page
+  129—46, 1976.
+
 \bibitem{05}
 S.F.{Chen} and J.{Goodman}.
 \newblock An empirical study of smoothing techniques for language modeling.
 \newblock page 310–318, 1996.
+
+\bibitem{08}
+W.B.{Croft} and D.J.{Harper}.
+\newblock Using probabilistic models of document retrieval without relevance
+  information.
+\newblock {\em Journal of Documentation}, pages 285--295, 1979.
 
 \end{thebibliography}

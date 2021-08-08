@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1628435200 "main.aux" "main.bbl" "main" 1628435672
+["bibtex main"] 1628439101 "main.aux" "main.bbl" "main" 1628439424
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "Bibliography.bib" 1628332777 1392 f8c768675c8e1c94291ec6bf7769b42d ""
-  "main.aux" 1628435671 390 2d9fefd0e220ab308e654c694cde16d9 "pdflatex"
+  "Bibliography.bib" 1628438876 1873 56568c17533a4541b872dc97fc4b2083 ""
+  "main.aux" 1628439423 450 e22f74d6c617ab05e1d96553e52a9036 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1628435671 "/Users/flavioforenza/Desktop/IR-paper/main.tex" "/Users/flavioforenza/Desktop/IR-paper/main.pdf" "main" 1628435672
-  "/Users/flavioforenza/Desktop/IR-paper/main.aux" 1628435671 390 2d9fefd0e220ab308e654c694cde16d9 ""
+["pdflatex"] 1628439422 "/Users/flavioforenza/Desktop/IR-paper/main.tex" "/Users/flavioforenza/Desktop/IR-paper/main.pdf" "main" 1628439424
+  "/Users/flavioforenza/Desktop/IR-paper/main.aux" 1628439423 450 e22f74d6c617ab05e1d96553e52a9036 ""
   "/Users/flavioforenza/Desktop/IR-paper/main.tex" 1628435670 2028 7a0fd94b9817dc75425ff27a6afcc062 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -71,15 +71,15 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1614709109 2432469 59fad14687ac1c2eefb595023facdf49 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "Introduction.tex" 1628332776 2581 5ad7fd654acfe6690c1b9ca3275a09ca ""
+  "Introduction.tex" 1628439422 2686 e0c82fe6c1c6380220b8baa723101926 ""
   "chapters/chapter_1.tex" 1628244049 54 a36fb68b3e2f1b3e0113edd9ad6cae27 ""
   "images/logoUnimi2.png" 1615799763 357917 fdb9663fcfb6a59c2574de54b4c4a7c6 ""
-  "main.aux" 1628435671 390 2d9fefd0e220ab308e654c694cde16d9 "pdflatex"
-  "main.bbl" 1628435201 1000 2fe7c7189758cd7ae1578c34675e1911 "bibtex main"
+  "main.aux" 1628439423 450 e22f74d6c617ab05e1d96553e52a9036 "pdflatex"
+  "main.bbl" 1628439101 1396 671976009528ba6dc0ee2a1567531453 "bibtex main"
   "main.tex" 1628435670 2028 7a0fd94b9817dc75425ff27a6afcc062 ""
   (generated)
   "/Users/flavioforenza/Desktop/IR-paper/main.log"
-  "/Users/flavioforenza/Desktop/IR-paper/main.pdf"
+  "main.aux"
   "main.log"
   "main.pdf"
-  "main.aux"
+  "/Users/flavioforenza/Desktop/IR-paper/main.pdf"

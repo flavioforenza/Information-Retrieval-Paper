@@ -1,34 +1,35 @@
 \section*{INTRODUCTION}
 Over the years, query expansion techniques have been proposed as a solution 
-to the problem of term mismatches between a query and its relevant 
-documents. Their goal is to enrich the number of words present in the user's 
-dictionary, so that they match those present in the corpus of documents in 
-which to search. There are typically two types of query expansion method 
-families; Local (based on Pseudo / Relevance / Indirect Feedback) and Global 
-(based on the generation and use of a thesaurus) \cite{01}. This paper focuses on 
-the first category. Given the difficulty in gathering the users' feedback, only 
-the first documents recovered will be considered relevant. Pseudo-relevant 
-documents are used to find possible candidate terms to help expand the 
-query \cite{02}. This method has been further developed within the concept of 
-the Language Model\cite{06}. Statistical language models are widely used within 
-Information Retrieval as they have a solid theoretical background and good 
-empirical performance. Clearly, the two main problems relate to correctly 
-estimating both the query model and the document model. A Language 
-Model calculates the relevance of a document \emph{d} to a query \emph{q} by estimating 
-a factored form of the distribution $P (q, D)$ \cite{03}. The construction of a good 
-Language model must necessarily make use of smoothing models when one 
-or more terms do not appear in a document. In the latter case, the maximum 
-likelihood estimator would produce a probability equal to zero, invalidating 
-the creation of the model itself \cite{04}\cite{05}. Another concept, useful for expanding 
-the query and widely used within the project, is that of \emph{Word Embeddings}. 
-The latter is obtained precisely from the use of Language models, or rather 
-thanks to the co-occurrence of the terms made available. This method is 
-based on being able to map every single word into a vector of real numbers, 
-within a vector space. The idea is to be able to compare the distance of these 
-in order to understand their similarity relationship. If one word is similar to 
-another, then these will be considered as synonyms. The remainder of 
-the paper is organized as follows. In the next section, \emph{Research question and 
-Methodology}, the objectives of the project will be introduced followed by an 
-overview of the proposed approach. The third section, \emph{Experimental result}, 
-describes the whole system and the results obtained. Finally, the conclusions 
-are presented in section four, \emph{Concluding remarks}.
+to the problem of term mismatches between a query and its relevant documents. 
+There are typically two types of query expansion method families: 
+Local (based on Pseudo / Relevance / Indirect Feedback) and Global (based 
+on the generation and use of a thesaurus) \cite{01}. This paper focuses on the 
+first category. Given the difficulty in gathering the users' feedback, only the 
+first documents recovered will be considered relevant. Pseudo-relevant documents 
+are used to find possible candidate terms to help expand the query \cite{02}.
+This method has been further developed within the concept of the Language
+Model\cite{06}. Statistical language models are widely used within Information 
+Retrieval as they have a solid theoretical background and good empirical performance. 
+At the state of the art, two well known probabilistic approaches 
+in infromation retrieval are the Robertson and Sparck Jones model \cite{07} and 
+the Croft and Harper model \cite{08}. Both models estimate the probability of relevance 
+of each document to the query. Clearly, the two main problems relate 
+to correctly estimating both the query model and the document model. A 
+Language Model calculates the relevance of a document \emph{d} to a query \emph{q} by 
+estimating a factored form of the distribution $P (q, D)$ \cite{03}. The construction 
+of a good Language model must necessarily make use of smoothing models 
+when one or more terms do not appear in a document. In the latter case, the 
+maximum likelihood estimator would produce a probability equal to zero, 
+invalidating the creation of the model itself \cite{04}\cite{05}. Another concept, useful 
+for expanding the query and widely used within the project, is that of 
+\emph{Word Embeddings}. The latter is obtained precisely from the use of Language 
+models, or rather thanks to the co-occurrence of the terms made available. 
+This method is based on being able to map every single word into a vector of 
+real numbers, within a vector space. The idea is to be able to compare the 
+distance of these in order to understand their similarity relationship. If one 
+word is similar to another, then these will be considered as synonyms. The 
+remainder of the paper is organized as follows. In the next section, \emph{Research 
+question and Methodology}, the objectives of the project will be introduced 
+followed by an overview of the proposed approach. The third section, \emph{Experimental 
+result}, describes the whole system and the results obtained. Finally, 
+the conclusions are presented in section four, \emph{Concluding remarks}.
