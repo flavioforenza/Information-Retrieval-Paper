@@ -29,6 +29,33 @@ the position of the relevant target document, that is the document
 that the user is searching for, was kept track. This was possible because a 
 query was chosen, among those available, that was close to the title of 
 this document. The score assigned to the target document will represent the 
-minimum \emph{threshold} to be able to form the new ranking of documents. This 
-step is fundamental as, by setting a higher threshold, the target document 
-would be lost in subsequent calculations. By setting a lower threshold, however, those documents that represent noise will be taken into account.
+minimum \emph{threshold} to be able to form the new ranking of documents. This step 
+is fundamental as, by setting a higher threshold, the target document would 
+be lost in subsequent calculations. By setting a lower threshold, however, 
+those documents that represent noise will be taken into account. From this 
+ranking, the \emph{LMs} for each document will be calculated \cite{10}, generating \emph{n} LMs, 
+with \emph{n} equal to the number of relevant documents, based on the terms in the 
+query. It should be noted that, in order to carry out this step, the concept 
+of \emph{skip-gram} has been applied to the query, with step \emph{s} equal to two. The 
+creation of each LM is possible only after using one of the existing smoothing 
+techniques. To prevent a linguistic model from assigning zero probability to 
+an invisible event, i.e. when a term present in the query is not present in 
+an LM, we should eliminate some probability mass from some more frequent 
+events and give it to events that we haven't never seen. There 
+are a variety of methods for smoothing, some of these are: \emph{Laplace (add-
+one) smoothing}, \emph{Linear Interpolation smoothing}, \emph{add-k smoothing}, \emph{back-off 
+smoothing} and \emph{Kneser-Ney smoothing}. Among these, the following paper 
+has experimented the use of the first two smoothing methods, each of which 
+will produce different results useful for achieving the final goal. The core of 
+the algorithm lies in being able to derive the best ranking of relevant documents, 
+using the initial query, through an iterative process, as s changes. 
+This variation will lead to the generation of several LMs, each with step \emph{s}, 
+with $s=\{2,3,\ldots,10\}$. At each iteration, a new ranking of documents will 
+be generated, thanks to the probability calculation (\ref{MLE}).
+
+\begin{eqnarray}\label{MLE}
+    P(q|d) & \approx & P(q|M_d) \nonumber \\
+           & \approx & \prod_i^n{P(w_i|w_{i-1})} \nonumber \\
+           & \approx & \frac{count(w_i,w_{i-1})}{\sum_{j=1}^n count(w_j,w_{i-1})} \nonumber \\
+           & = & \frac{count(w_i, w_{i-1})}{count(w_{i-1})}
+\end{eqnarray}
