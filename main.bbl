@@ -39,6 +39,11 @@ S.F.{Chen} and J.{Goodman}.
 \newblock An empirical study of smoothing techniques for language modeling.
 \newblock page 310–318, 1996.
 
+\bibitem{09}
+V.{Lavrenko} and W.B.{Croft}.
+\newblock {\em Relevance Models in Information Retrieval}, pages 11--56.
+\newblock Springer Netherlands, 2003.
+
 \bibitem{08}
 W.B.{Croft} and D.J.{Harper}.
 \newblock Using probabilistic models of document retrieval without relevance

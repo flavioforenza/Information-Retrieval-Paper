@@ -1,0 +1,34 @@
+\section*{Research question and Methodology}
+
+Language models can be used for a variety of purposes, such as: speech recognition, 
+spelling correction, grammar correction and automatic translation. 
+All these applications have the task of assigning a probability to a 
+sequence of words, based on the number of times they appear in one or more 
+documents. As briefly mentioned in the introductory chapter, the purpose 
+of the following project is to verify the existence of a further method, which 
+makes use of the concept of language model, specifically an \emph{n-grams} model, 
+capable of expanding a query. Achieving this goal means solving the problem 
+of mismatch between the terms present in the query and those present in a 
+corpus of documents. The probability of generating a new \emph{q} query given the 
+estimate of a Language Model for a \emph{D} document can only occur through a 
+ranking of relevant documents. If the corpus of documents is large, thinking 
+of generating \emph{n} Language models, with \emph{n} equal to the number of documents, 
+turns out to be a computationally expensive operation. This paper has used 
+a useful approach to be able to generate a first ranking of documents ordered 
+by relevance with the query \emph{q}. The technique applied is the \emph{tf-idf} recovery 
+model. The adoption of this method of weighing the terms, as well as being 
+widely used in the state of the art, produces excellent results. The introduction 
+of the \emph{LM}, and of other semantic analysis techniques, made it possible 
+to outperform the performance of the \emph{tf-idf} baseline, generating ranking, 
+starting from the latter, of documents more pertinent to the query \emph{q} \cite{09}. In 
+the following paper, tests are carried out which certify the veracity of this 
+thesis. It should be noted that the generation of the ranking, obtained from 
+the weights of the \emph{tf-idf} method, is obtained using the well-known \emph{cosine 
+similarity} metric between the weight vectors. To comply with the set objective, 
+the position of the relevant target document, that is the document 
+that the user is searching for, was kept track. This was possible because a 
+query was chosen, among those available, that was close to the title of 
+this document. The score assigned to the target document will represent the 
+minimum \emph{threshold} to be able to form the new ranking of documents. This 
+step is fundamental as, by setting a higher threshold, the target document 
+would be lost in subsequent calculations. By setting a lower threshold, however, those documents that represent noise will be taken into account.
