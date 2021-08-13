@@ -4,6 +4,8 @@ The top-level auxiliary file: main.aux
 The style file: abbrv.bst
 Database file #1: Bibliography.bib
 Warning--can't use both author and editor fields in 10
+Warning--empty chapter and pages in 12
+Warning--empty publisher in 12
 Warning--empty school in 04
 Warning--empty school in 11
 Warning--empty booktitle in 03
@@ -12,45 +14,45 @@ Warning--empty booktitle in 06
 Warning--empty booktitle in 01
 Warning--empty booktitle in 05
 Warning--can't use both author and editor fields in 09
-You've used 11 entries,
+You've used 13 entries,
             2118 wiz_defined-function locations,
-            556 strings with 5015 characters,
-and the built_in function-call counts, 4209 in all, are:
-= -- 428
-> -- 141
-< -- 9
-+ -- 57
-- -- 44
-* -- 196
-:= -- 599
-add.period$ -- 33
-call.type$ -- 11
-change.case$ -- 51
+            563 strings with 5231 characters,
+and the built_in function-call counts, 4722 in all, are:
+= -- 470
+> -- 161
+< -- 10
++ -- 65
+- -- 50
+* -- 225
+:= -- 683
+add.period$ -- 39
+call.type$ -- 13
+change.case$ -- 59
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 242
-empty$ -- 329
-format.name$ -- 44
-if$ -- 981
+cite$ -- 24
+duplicate$ -- 269
+empty$ -- 382
+format.name$ -- 50
+if$ -- 1090
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 11
-newline$ -- 58
-num.names$ -- 22
-pop$ -- 88
+int.to.str$ -- 13
+missing$ -- 14
+newline$ -- 68
+num.names$ -- 26
+pop$ -- 107
 preamble$ -- 1
-purify$ -- 44
+purify$ -- 51
 quote$ -- 0
-skip$ -- 232
+skip$ -- 246
 stack$ -- 0
-substring$ -- 213
-swap$ -- 124
-text.length$ -- 9
+substring$ -- 223
+swap$ -- 128
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 40
-warning$ -- 9
-while$ -- 33
-width$ -- 13
-write$ -- 116
-(There were 9 warnings)
+type$ -- 46
+warning$ -- 11
+while$ -- 37
+width$ -- 15
+write$ -- 136
+(There were 11 warnings)

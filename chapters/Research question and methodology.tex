@@ -80,8 +80,67 @@ where:
 \begin{itemize}
     \item $\sum_i \lambda_i = 1$
     \item $M_d$: represents the language model of the single document;
-    \item $M_c$: represents the language model of the entire collectionof documents;
+    \item $M_c$: represents the language model of the entire collection of documents;
     \item $|V|$: represents the number of unique words within the corpus of documents.
 \end{itemize}
-
-
+It is always good to specify that, like the iterative process of steps \emph{s}, both $\lambda$ 
+parameters also follow the same reasoning. The idea is to assign a range of 
+numbers $\lambda = \{0.1, 0.2,\ldots,1\}$ to both values. In both smoothing techniques, 
+the \emph{perplexity} level existing between the query word set $W = \{w_1, w_2,\ldots,w_N\}$ and the language model of 
+the target document present in the ranking of relevant documents returned 
+by the tf-idf model will be calculated(\ref{perplexity}) \cite{12}.
+\begin{equation}\label{perplexity}
+    pp(W) = \sqrt[n]{\prod_{i=1}^N\frac{1}{P(w_i|w_{i-1})}} 
+\end{equation}
+After obtaining the best ranking, the next step is based on building a \emph{term-
+term matrix} \cite{12}, where the terms in question are both those of the query and 
+those belonging to the language model of the entire collection of relevant 
+documents present in the ranking. Within this matrix, the numbers of co-occurrences 
+between all terms will be reported. On this type of matrix it is 
+possible to apply the calculation of \emph{Positive Pointwise Mutual Information 
+(PPMI)}. PPMI draws on the intuition that the best way to weigh the association 
+between two words is to ask how much more the two words co-occur in 
+our corpus than we would have a priori expected them to appear by chance. 
+This measure derives from the calculation of the standard PMI which represents 
+a measure of frequency between two events \emph{x} and \emph{y}, compared to what 
+we would expect if they were independent (\ref{pmi}).
+\begin{equation}\label{pmi}
+    \emph{pmi(x,y)} = \log_2\frac{P(x,y)}{P(x)P(y)}
+\end{equation}
+The ratio gives us an estimate of how much more the two words co-occur 
+than we expect by chance. PMI values can be positive, negative or infinite. 
+Negative values, which imply that events occur less often than we would 
+expect by chance, tend to be unreliable when we have documents consisting 
+of few terms, as in our case. To solve this problem, the calculation of the 
+PPMI is used which replaces negative values with zero(\ref{ppmi}).
+\begin{equation}\label{ppmi}
+    PPMI(x,y) = \max(\log_2\frac{P(x,y)}{P(x)P(y)}, 0)
+\end{equation}
+But the question is: why is the PPMI calculation used? The adoption of 
+this is useful for being able to calculate the similarity between words, i.e. 
+their synonymy, search for paraphrases, keep track of the change in meaning 
+of words and to automatically discover the meanings of words in different 
+corpora. To find the words most similar to those in the query, the cosine 
+similarity is calculated on the first ten word vectors that have the highest 
+positive PPMI values. Eventually, each token in the query will have a maximum 
+of ten expansion terms. Thanks to this, we are already seeing how 
+query expansion can be done. Moving on, there is a problem to solve before we can 
+calculate the similarity of the cosine: the \emph{sparsity} of the matrix. In order to 
+obtain a good similarity, relatively low at the computational level, another 
+concept has been implemented: \emph{Singular Value Decomposition (SVD)}. The 
+idea of applying SVD on a term-term matrix was proposed by \cite{13}. Switching 
+from sparse to dense vectors allows for better similarity comparisons. The 
+SVD allows to decompose the term-term matrix (A), of dimensions $txd$, into 
+three matrices:
+\begin{equation}
+    A = USV^t
+\end{equation}
+Where:
+\begin{enumerate}
+    \item \emph{U}: matrix of dimension $txm$ where the columns represent the left 
+    singular vectors of matrix A;
+    \item \emph{S}: diagonal matrix of dimension $mxm$, containing the singular values 
+    of matrix A;
+    \item \emph{$V^t$}: transposed matrix, of dimensions $mxd$, where the columns represent 
+    the right singular vectors of matrix A.
+\end{enumerate}

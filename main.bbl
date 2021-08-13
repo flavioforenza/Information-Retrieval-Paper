@@ -5,6 +5,13 @@ C.D.{Manning}, P.{Raghavan}, and H.{Schütze}.
 \newblock {\em Introduction to Information Retrieval}, chapter~12.
 \newblock Cambridge University Press, 2008.
 
+\bibitem{12}
+D.{Jurafsky} and J.H.{}.
+\newblock {\em Speech and Language Processing: An Introduction to Natural
+  Language Processing, Computational Linguistics, and Speech Recognition},
+  volume~3.
+\newblock 2008.
+
 \bibitem{04}
 G.{Alexander}.
 \newblock {\em Log-Linear Interpolation of Language Models}.
@@ -37,6 +44,11 @@ R.{Cummins} and C.{O'Riordan}.
 \newblock Evolving co-occurrence based query expansion schemes in information
   retrieval using genetic programming.
 \newblock pages 137--146, 2005.
+
+\bibitem{13}
+H.~Sch{\"u}tze.
+\newblock Dimensions of meaning.
+\newblock In {\em Supercomputing '92}, 1992.
 
 \bibitem{07}
 S.E.{Robertson} and K.{Spärck Jones}.
