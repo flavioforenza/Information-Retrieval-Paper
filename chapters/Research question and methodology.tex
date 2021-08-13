@@ -50,12 +50,38 @@ will produce different results useful for achieving the final goal. The core of
 the algorithm lies in being able to derive the best ranking of relevant documents, 
 using the initial query, through an iterative process, as s changes. 
 This variation will lead to the generation of several LMs, each with step \emph{s}, 
-with $s=\{2,3,\ldots,10\}$. At each iteration, a new ranking of documents will 
-be generated, thanks to the probability calculation (\ref{MLE}).
-
+with $s=\{2,3,\ldots,10\}$. At each iteration, a new ranking of documents will be generated, thanks to the calculation of the Maximum Likelihood Estimation \emph{MLE}, between the query \emph{q} and each document \emph{d}(\ref{MLE}).
 \begin{eqnarray}\label{MLE}
     P(q|d) & \approx & P(q|M_d) \nonumber \\
            & \approx & \prod_i^n{P(w_i|w_{i-1})} \nonumber \\
            & \approx & \frac{count(w_i,w_{i-1})}{\sum_{j=1}^n count(w_j,w_{i-1})} \nonumber \\
            & = & \frac{count(w_i, w_{i-1})}{count(w_{i-1})}
 \end{eqnarray}
+Among all these nine rankings, after being sorted, the one that will have the 
+target document in the highest position, close to the first, will be chosen. 
+Also thanks to this, it will be possible to determine the lambda parameters 
+present in the interpolation smoothing technique. By focusing on the latter 
+technique, it was necessary to implement the concept suggested by \cite{11} as 
+regards the calculation of linear interpolation. Instead of adding one to 
+the probability calculation, as is well known in Laplace's smoothing (\ref{Laplace}), linear 
+interpolation, recursively, calculates the MLE of order two (\emph{bi-grams}) (\ref{LinInt}), up to 
+the order zero (\emph{zero-grams})(\ref{zero-grams}).
+\begin{equation}\label{Laplace}
+    P(w_i|w_{i-1}) = \frac{count(w_{i-1})+1}{count(w_{i-1})+|V|}
+\end{equation}
+\begin{equation}\label{LinInt}
+    P(w_i|w_{i-1}) = \lambda P(q|M_d) + (1-\lambda)P(q|M_c)
+\end{equation}
+\begin{equation}\label{zero-grams}
+    P(w_i) = \lambda \frac{1}{|V|} + (1-\lambda)P(w_i)
+\end{equation}
+
+where:
+\begin{itemize}
+    \item $\sum_i \lambda_i = 1$
+    \item $M_d$: represents the language model of the single document;
+    \item $M_c$: represents the language model of the entire collectionof documents;
+    \item $|V|$: represents the number of unique words within the corpus of documents.
+\end{itemize}
+
+
