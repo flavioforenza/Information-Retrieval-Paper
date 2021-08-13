@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex main"] 1628858899 "main.aux" "main.bbl" "main" 1628860829
+["bibtex main"] 1628863608 "main.aux" "main.bbl" "main" 1628864079
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "Bibliography.bib" 1628858886 3038 690d2aaaaa9fa30f148fa5c96df27d3a ""
-  "main.aux" 1628860828 676 2267e8ae54efee6a146c27757a5f0c41 "pdflatex"
+  "Bibliography.bib" 1628861219 3363 83e488d2996fb6876b73a7ed257fc7ad ""
+  "main.aux" 1628864079 827 dee7dfa8d9457c2393c7488c471444b1 "pdflatex"
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1628860827 "/Users/flavioforenza/Desktop/IR-paper/main.tex" "/Users/flavioforenza/Desktop/IR-paper/main.pdf" "main" 1628860829
-  "/Users/flavioforenza/Desktop/IR-paper/main.aux" 1628860828 676 2267e8ae54efee6a146c27757a5f0c41 ""
+  "main.blg"
+["pdflatex"] 1628864078 "/Users/flavioforenza/Desktop/IR-paper/main.tex" "/Users/flavioforenza/Desktop/IR-paper/main.pdf" "main" 1628864079
+  "/Users/flavioforenza/Desktop/IR-paper/main.aux" 1628864079 827 dee7dfa8d9457c2393c7488c471444b1 ""
   "/Users/flavioforenza/Desktop/IR-paper/main.tex" 1628440287 2070 b8e8a8ca4a748e46545b5c5bf833b311 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -83,14 +83,14 @@
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1614709109 2432469 59fad14687ac1c2eefb595023facdf49 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
   "chapters/Introduction.tex" 1628441046 2686 379f6fbbe2f263108796f10ab1ab0ed6 ""
-  "chapters/Research question and methodology.tex" 1628860827 9736 43d19ab99d11948d8ab9f3552ee9eacb ""
+  "chapters/Research question and methodology.tex" 1628864077 11247 378d2abb757467e249f396e28a07263e ""
   "images/logoUnimi2.png" 1615799763 357917 fdb9663fcfb6a59c2574de54b4c4a7c6 ""
-  "main.aux" 1628860828 676 2267e8ae54efee6a146c27757a5f0c41 "pdflatex"
-  "main.bbl" 1628858899 2165 12aa5a60f6e5d75ec858522dc13eb9f3 "bibtex main"
+  "main.aux" 1628864079 827 dee7dfa8d9457c2393c7488c471444b1 "pdflatex"
+  "main.bbl" 1628863608 2405 b1d6ea8cc4c814fbf7837beb227bdd7b "bibtex main"
   "main.tex" 1628440287 2070 b8e8a8ca4a748e46545b5c5bf833b311 ""
   (generated)
+  "main.log"
   "main.pdf"
   "/Users/flavioforenza/Desktop/IR-paper/main.pdf"
   "main.aux"
   "/Users/flavioforenza/Desktop/IR-paper/main.log"
-  "main.log"

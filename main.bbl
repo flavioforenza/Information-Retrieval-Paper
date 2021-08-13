@@ -50,6 +50,12 @@ H.~Sch{\"u}tze.
 \newblock Dimensions of meaning.
 \newblock In {\em Supercomputing '92}, 1992.
 
+\bibitem{14}
+S.{Deerwester}, S.T.{Dumais}, G.W.{Furnas}, T.K.{Landauer}, and R.{Harshman}.
+\newblock Indexing by latent semantic analysis.
+\newblock {\em Journal of the American Society for Information Science 41},
+  pages 391--407, 1990.
+
 \bibitem{07}
 S.E.{Robertson} and K.{Spärck Jones}.
 \newblock Relevance weighting of search terms.

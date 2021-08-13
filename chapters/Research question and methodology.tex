@@ -131,8 +131,8 @@ concept has been implemented: \emph{Singular Value Decomposition (SVD)}. The
 idea of applying SVD on a term-term matrix was proposed by \cite{13}. Switching 
 from sparse to dense vectors allows for better similarity comparisons. The 
 SVD allows to decompose the term-term matrix (A), of dimensions $txd$, into 
-three matrices:
-\begin{equation}
+three matrices \cite{14} (\ref{decomposition}):
+\begin{equation}\label{decomposition}
     A = USV^t
 \end{equation}
 Where:
@@ -141,6 +141,30 @@ Where:
     singular vectors of matrix A;
     \item \emph{S}: diagonal matrix of dimension $mxm$, containing the singular values 
     of matrix A;
-    \item \emph{$V^t$}: transposed matrix, of dimensions $mxd$, where the columns represent 
+    \item \emph{$V^T$}: transposed matrix, of dimensions $mxd$, where the columns represent 
     the right singular vectors of matrix A.
 \end{enumerate}
+Thanks to the product of the matrix \emph{U} with the matrix \emph{S}, a new matrix 
+\emph{$\mathcal{D}$} (\ref{matrixD}), of dimension $txm$, is formed containing all the terms that will be 
+compared, through cosine similarity, with the query terms present in the 
+matrix \emph{$\mathcal{T}$} (\ref{matrixT}) given by the product of \emph{S} and $V^T$ .
+\begin{equation}\label{matrixD}
+    \mathcal{D} = U*S
+\end{equation}
+\begin{equation}\label{matrixT}
+    \mathcal{T} = S*V^T
+\end{equation}
+Having all the possible words available to be added to the query tokens, the 
+time has come to generate all the possible queries. The number of queries 
+produced will depend on the number of words present in the initial query and 
+on any words obtained from the calculation of the cosine similarity. Having 
+set a maximum limit of ten words per token, the total of the quries generated 
+is given by the product (\ref{possQueries}) of the number of possible pairs of terms: 
+\begin{equation}\label{possQueries}
+    \#Queries = \prod_i^N \#new\_tokens_i
+\end{equation}
+where \emph{i} is the i-th token of the query and N is the len the query. Being 
+new queries, these will be subjected to the same procedure as the original query, 
+that is, new LMs will be produced and with them new rankings of documents 
+that will contain the target document in the first positions. Finally, the best 
+query, or queries, will be chosen based on the level of perplexity reached.
