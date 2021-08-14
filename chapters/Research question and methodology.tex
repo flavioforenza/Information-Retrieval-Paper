@@ -163,8 +163,8 @@ is given by the product (\ref{possQueries}) of the number of possible pairs of t
 \begin{equation}\label{possQueries}
     \#Queries = \prod_i^N \#new\_tokens_i
 \end{equation}
-where \emph{i} is the i-th token of the query and N is the len the query. Being 
-new queries, these will be subjected to the same procedure as the original query, 
+where \emph{i} is the i-th token of the query and N is the len of the query. Being new 
+queries, these will be subjected to the same procedure as the original query, 
 that is, new LMs will be produced and with them new rankings of documents 
 that will contain the target document in the first positions. Finally, the best 
 query, or queries, will be chosen based on the level of perplexity reached.
