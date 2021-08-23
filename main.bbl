@@ -34,6 +34,13 @@ J.{Lafferty} and C.{Zhai}.
   information retrieval.
 \newblock page 111–119, 2001.
 
+\bibitem{15}
+J.{Marin}, A.{Biswas}, F.{Ofli}, N.{Hynes}, A.{Salvador}, Y.{Aytar}, I.{Weber},
+  and A.{Torralba}.
+\newblock Recipe1m+: A dataset for learning cross-modal embeddings for cooking
+  recipes and food images.
+\newblock {\em {IEEE} Trans. Pattern Anal. Mach. Intell.}, 2019.
+
 \bibitem{06}
 J.M.{Ponte} and W.B.{Croft}.
 \newblock A language modeling approach to information retrieval.
