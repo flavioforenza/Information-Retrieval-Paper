@@ -12,47 +12,48 @@ Warning--empty booktitle in 03
 Warning--empty booktitle in 02
 Warning--empty booktitle in 06
 Warning--empty booktitle in 01
+Warning--empty journal in 16
 Warning--empty booktitle in 05
 Warning--can't use both author and editor fields in 09
-You've used 15 entries,
+You've used 16 entries,
             2118 wiz_defined-function locations,
-            574 strings with 5675 characters,
-and the built_in function-call counts, 5655 in all, are:
-= -- 555
-> -- 232
-< -- 11
-+ -- 93
-- -- 76
-* -- 297
-:= -- 842
-add.period$ -- 45
-call.type$ -- 15
-change.case$ -- 78
+            579 strings with 5803 characters,
+and the built_in function-call counts, 6139 in all, are:
+= -- 603
+> -- 255
+< -- 12
++ -- 102
+- -- 84
+* -- 329
+:= -- 914
+add.period$ -- 48
+call.type$ -- 16
+change.case$ -- 85
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 299
-empty$ -- 431
-format.name$ -- 76
-if$ -- 1280
+cite$ -- 28
+duplicate$ -- 319
+empty$ -- 464
+format.name$ -- 84
+if$ -- 1388
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 16
-newline$ -- 78
-num.names$ -- 30
-pop$ -- 126
+int.to.str$ -- 16
+missing$ -- 17
+newline$ -- 83
+num.names$ -- 32
+pop$ -- 135
 preamble$ -- 1
-purify$ -- 68
+purify$ -- 74
 quote$ -- 0
-skip$ -- 272
+skip$ -- 291
 stack$ -- 0
-substring$ -- 261
-swap$ -- 139
-text.length$ -- 11
+substring$ -- 297
+swap$ -- 148
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 54
-warning$ -- 11
-while$ -- 43
-width$ -- 17
-write$ -- 157
-(There were 11 warnings)
+type$ -- 58
+warning$ -- 12
+while$ -- 47
+width$ -- 18
+write$ -- 167
+(There were 12 warnings)
