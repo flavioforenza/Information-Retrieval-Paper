@@ -69,6 +69,20 @@ from the target document is less than all other distances produced by the remain
     \centering
     \includegraphics[width =\linewidth]{images/PCA paper/PCA all.png}
     \centering
-    \caption{PCA initial query (top) and expansive query (bottom).}
+    \caption{Distance within the PCA between the original query (top) and the expanded query (bottom).}
     \label{PCA}
 \end{figure}
+As we can see, compared to the position of the original query, a query with a smaller distance has always been found.
+For each new query generated, the perplexity is calculated as the skip-grams step varies, with the language model of the target document.
+After various tests, with a higher number of queries, it can be stated that the skip-gram step and the perplexity are two inversely proportional 
+measures, that is, as the step \emph{s} increases, the perplexity \emph{p} decreases. The same behavior occurs with the $\lambda_1$ and $\lambda_2$ parameters present in the interpolated smoothing. 
+When  $\lambda_1$ is less than  $\lambda_2$, perplexity always tends to decrease (\ref{perplexity}).
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width =0.8\linewidth]{images/perplexity.png}
+    \centering
+    \caption{Variation of the perplexity value based on the change of the step \emph{s} and of the $\lambda_1$ and $\lambda_2$ values of interpolated smoothing.}
+    \label{perplexity}
+\end{figure}
+We have come to the point of asking: How can the whole system be evaluated? To answer this question, four different libraries able to tokenize documents and queries were used: Spacy, Gensim, Nltk and Keras.
+Each of these produces different results in terms of perplexity, number of queries generated, term co-occurrence matrices, sparsity index, rankings etc.

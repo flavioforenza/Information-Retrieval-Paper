@@ -140,13 +140,9 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /Users/flavioforenza/Desktop/IR-paper/images/logoUnimi2.png
-INPUT /Users/flavioforenza/Desktop/IR-paper/images/logoUnimi2.png
-INPUT /Users/flavioforenza/Desktop/IR-paper/images/logoUnimi2.png
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT /usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /Users/flavioforenza/Desktop/IR-paper/chapters/Introduction.tex
 INPUT /Users/flavioforenza/Desktop/IR-paper/chapters/Introduction.tex
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
@@ -163,6 +159,7 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /Users/flavioforenza/Desktop/IR-paper/chapters/Research question and methodology.tex
 INPUT /Users/flavioforenza/Desktop/IR-paper/chapters/Research question and methodology.tex
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
@@ -177,6 +174,9 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /Users/flavioforenza/Desktop/IR-paper/images/PCA paper/PCA all.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/images/PCA paper/PCA all.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/images/PCA paper/PCA all.png
+INPUT /Users/flavioforenza/Desktop/IR-paper/images/perplexity.png
+INPUT /Users/flavioforenza/Desktop/IR-paper/images/perplexity.png
+INPUT /Users/flavioforenza/Desktop/IR-paper/images/perplexity.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/main.bbl
 INPUT /Users/flavioforenza/Desktop/IR-paper/main.bbl
 INPUT /Users/flavioforenza/Desktop/IR-paper/main.aux
