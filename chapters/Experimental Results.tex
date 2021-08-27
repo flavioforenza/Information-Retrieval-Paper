@@ -85,4 +85,48 @@ When  $\lambda_1$ is less than  $\lambda_2$, perplexity always tends to decrease
     \label{perplexity}
 \end{figure}
 We have come to the point of asking: How can the whole system be evaluated? To answer this question, four different libraries able to tokenize documents and queries were used: Spacy, Gensim, Nltk and Keras.
-Each of these produces different results in terms of perplexity, number of queries generated, term co-occurrence matrices, sparsity index, rankings etc.
+Each of these produces different results in terms of perplexity, number of queries generated, sparsity index (\ref{performance}), rankings(\ref{Index}) etc.
+
+\begin{table}[h!]
+    \centering
+    \begin{adjustbox}{max width=\textwidth}
+    \begin{tabular}{|c||c|c||c|c||c|c||c|c||c|c||}
+        \hline
+        \multirow{2}{*}{\bfseries{Method}} & \multicolumn{2}{c||}{\bfseries{\RN{1}}} & \multicolumn{2}{c||}{\bfseries{\RN{2}}} & \multicolumn{2}{c||}{\bfseries{\RN{3}}} & \multicolumn{2}{c||}{\bfseries{\RN{4}}} & \multicolumn{2}{c||}{\bfseries{\RN{5}}}\\            & \bfseries{T} & \bfseries{P} & \bfseries{T} & \bfseries{P} & \bfseries{T} & \bfseries{P} & \bfseries{T} & \bfseries{P} & \bfseries{T} & \bfseries{P}\\
+        \hline
+        \hline
+        Keras & \color{red}{228} & \color{green}{0} & \color{red}{623} & \color{green}{0} & \color{red}{82} & \color{green}{0} & \color{red}{126} & \color{green}{0} & \color{red}{51} & \color{green}{0}\\
+        \hline
+        Nltk & \color{red}{228} & \color{green}{0} & \color{red}{623} & \color{green}{0} & \color{red}{82} & \color{green}{0} & \color{red}{126} & \color{green}{0} & \color{red}{51} & \color{green}{0}\\
+        \hline 
+        Spacy & \color{red}{221} & \color{green}{0} & \color{red}{647} & \color{green}{0} & \color{red}{81} & \color{green}{0} & \color{red}{141} & \color{green}{0} & \color{red}{72} & \color{green}{0}\\
+        \hline
+        Gensim & \color{red}{240} &  \color{green}{0} & \color{red}{652} & \color{green}{37} & \color{red}{84} & \color{green}{0} & \color{red}{113} & \color{green}{0} & \color{red}{37} & \color{green}{0}\\
+        \hline
+    \end{tabular}
+    \end{adjustbox}
+    \caption{Target document position in the ranking of relevant documents. (T: \emph{tf-idf}, P:\emph{Proposed})}
+    \label{Index}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \begin{adjustbox}{max width=\textwidth}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \bfseries{Method} & \bfseries{\#Queries} & \bfseries{Avg. Perplexity} &\bfseries{Avg. Sparsity Reduction}\\
+        \hline
+        \hline
+        Keras & 14.900 & \bfseries{15.03} & 0.721\\
+        \hline
+        Nltk & 14.900 & 16.01 & 0.717\\
+        \hline
+        Spacy & 19.010 & 21.25 & \bfseries{0.741}\\
+        \hline
+        Gensim & \bfseries{22.090} & 33.96 & 0.730\\
+        \hline
+    \end{tabular}
+    \end{adjustbox}
+    \caption{Performance in terms of number of queries (\#Queries), Average perplexity and Saprsity reduction with the SVD method}
+    \label{performance}
+\end{table}
