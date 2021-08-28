@@ -1,0 +1,43 @@
+\documentclass[10pt]{beamer}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{bibentry}
+\usepackage{biblatex}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage[font=scriptsize]{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\captionsetup[figure]{labelsep=period}
+\captionsetup[subfigure]{labelformat=simple} % default is 'parens'
+\renewcommand\thesubfigure{\thefigure.\alph{subfigure}.}
+\DeclareMathOperator*{\argmax}{argmax}
+\DeclareMathOperator*{\argmin}{argmin}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]
+\bibliography{Bibliography}
+
+\graphicspath{{images/}}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{page number in head/foot}[appendixframenumber]
+\usetheme{Darmstadt}
+
+\title[short]{INFORMATION RETRIEVAL}
+\author[Flavio Forenza]{Flavio Forenza \\ \tiny flavio.forenza@studenti.unimi.it\\[5mm] \includegraphics[scale = 0.06]{logoUnimi2.png}}
+\institute{Department of Computer Science,\\ University of Milan, Italy}
+\date{\tiny \today}
+
+\begin{document}
+
+\begin{frame}
+    \maketitle
+\end{frame}
+
+
+\logo{\includegraphics[width=0.1\linewidth]{logoUnimi2.png}}
+
+\input{slides_paper.tex}
+
+\end{document}
+
