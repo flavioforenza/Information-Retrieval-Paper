@@ -161,10 +161,11 @@ on any words obtained from the calculation of the cosine similarity. Having
 set a maximum limit of ten words per token, the total of the quries generated 
 is given by the product (\ref{possQueries}) of the number of possible pairs of terms: 
 \begin{equation}\label{possQueries}
-    \#Queries = \prod_i \#new\_tokens_i
+    \#Queries = \prod_i^q (\#new\_tokens_i)
 \end{equation}
-where \emph{i} is the i-th new token of the query. Being new 
-queries, these will be subjected to the same procedure as the original query, 
-that is, new LMs will be produced and with them new rankings of documents 
-that will contain the target document in the first positions. Finally, the best 
-query, or queries, will be chosen based on the level of perplexity reached.
+where \emph{i} represents the single word taken in the query and \emph{q} represents the 
+total of the words present in the starting query. Being new queries, these 
+will be subjected to the same procedure as the original query, that is, new 
+LMs will be produced and with them new rankings of documents that will 
+contain the target document in the first positions. Finally, the best query, 
+or queries, will be chosen based on the level of perplexity reached.

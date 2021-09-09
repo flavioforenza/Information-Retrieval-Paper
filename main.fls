@@ -184,6 +184,7 @@ INPUT /Users/flavioforenza/Desktop/IR-paper/images/PCA paper/PCA all.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/images/perplexity.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/images/perplexity.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/images/perplexity.png
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT /Users/flavioforenza/Desktop/IR-paper/chapters/Concluding remarks.tex
 INPUT /Users/flavioforenza/Desktop/IR-paper/chapters/Concluding remarks.tex
 INPUT /Users/flavioforenza/Desktop/IR-paper/main.bbl
@@ -194,6 +195,7 @@ INPUT /Users/flavioforenza/Desktop/IR-paper/main.out
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
