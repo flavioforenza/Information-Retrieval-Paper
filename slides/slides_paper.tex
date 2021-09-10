@@ -62,7 +62,57 @@
 \end{frame}
 
 \begin{frame}{RANKING EVALUATION}
-    
+    The evaluation of the ranking of relevant documents was carried out considering 
+    as the entity, of each single document, its category of belonging\footfullcite{16} 
+    (dessert, salad, beverage, etc.). The search for each category takes place 
+    in two methods, with two different libraries:
+    \begin{itemize}
+        \item Scrape Schema Recipe
+        \item USDA
+    \end{itemize}
+    \begin{minipage}{\linewidth}
+        \centering
+        \begin{minipage}{0.50\linewidth}
+            \begin{table}[]
+                \centering
+                \begin{adjustbox}{max width=\textwidth}
+                \begin{tabular}{|c||c|c|c||c||c||}
+                    \hline
+                    \multirow{2}{*}{\bfseries{Queries}} & \multicolumn{3}{c||}{\bfseries{Scrape Schema Recipe}} & \multicolumn{1}{c||}{\bfseries{USDA}} & \multicolumn{1}{c||}{\bfseries{Mixed (Scrape+USDA)}} \\            & \bfseries{Overestimate} & \bfseries{Underestimate} & \bfseries{Discarded} & \bfseries{}  & \bfseries{}\\
+                    \hline
+                    \hline
+                    \RN{1} & 0.7520 & 0.3734 & 0.5958 & 0.9817 & 0.9947\\
+                    \hline
+                    \RN{2} & 0.9309 & 0.6780 & 0.9054 & 1.0 & 1.0\\
+                    \hline 
+                    \RN{3} & 0.7458 & 0.2746 & 0.5411 & 0.9797 & 0.9982\\
+                    \hline
+                    \RN{4} & 0.8939 &  0.5320 & 0.8433 & 0.9612 & 0.9870\\
+                    \hline
+                    \RN{5} & 0.8335 & 0.5033 & 0.7544 & 0.9940 & 0.9940\\
+                    \hline
+                    \hline
+                    Average & 0.8312 & 0.4722 & 0.7280 & 0.9833 &  \bfseries 0.99478 \\
+                    \hline
+                \end{tabular}
+                \end{adjustbox}
+                \caption{Average Precision on each query for each method.}
+                \label{avgp}
+                \centering
+            \end{table}
+        \end{minipage}
+        \hspace{0.05\linewidth}
+        \begin{minipage}{0.40\linewidth}
+            \begin{figure}[htbp]
+                \centering
+                \includegraphics[width =\linewidth]{11 DOCUMENTS WITH MIXED ENTITIES (SCRAPE+USDA).png}
+                \centering
+                \caption{Performance in terms of Precion, Recall and Interpolated Recall.}
+                \label{Performance mixed approach}
+                \centering
+            \end{figure}
+        \end{minipage}
+    \end{minipage}
 \end{frame}
 
 \begin{frame}{LANGUAGE MODELS}

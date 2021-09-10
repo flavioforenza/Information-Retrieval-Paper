@@ -16,5 +16,45 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{16}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0c353a00103209864bf6c302efcd5665}{%
+           family={R.{Parvez}},
+           familyi={R\bibinitperiod},
+           given={Md},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a3f06c462160f04fdadfbc0f4dbcd0e7}{%
+           family={S.{Chakraborty}},
+           familyi={S\bibinitperiod}}}%
+        {{hash=3caf5520bbf45101aa21cf07c5c5f138}{%
+           family={B.{Ray}},
+           familyi={B\bibinitperiod}}}%
+        {{hash=db3f6f440720730310558bbb4882bc7a}{%
+           family={K-W.{Chang}},
+           familyi={K\bibinithyphendelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{18bd4b2658b8f64ef10bf7a1553e3db6}
+      \strng{fullhash}{4ab6f980cd7ebe372306990b19db488e}
+      \strng{bibnamehash}{18bd4b2658b8f64ef10bf7a1553e3db6}
+      \strng{authorbibnamehash}{18bd4b2658b8f64ef10bf7a1553e3db6}
+      \strng{authornamehash}{18bd4b2658b8f64ef10bf7a1553e3db6}
+      \strng{authorfullhash}{4ab6f980cd7ebe372306990b19db488e}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Building Language Models for Text with Named Entities}
+      \field{year}{2018}
+      \field{pages}{373\bibrangedash 2383}
+      \range{pages}{2011}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
