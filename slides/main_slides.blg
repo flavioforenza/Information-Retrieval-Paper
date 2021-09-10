@@ -1,11 +1,9 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'main_slides.blg'
-[84] biber-darwin:322> INFO - === Sat Aug 28, 2021, 11:15:26
-[102] Biber.pm:415> INFO - Reading 'main_slides.bcf'
-[226] Biber.pm:943> INFO - Found 3 citekeys in bib section 0
-[243] Biber.pm:4256> INFO - Processing section 0
-[243] Utils.pm:75> INFO - Globbing data source 'Bibliography.bib'
-[244] Utils.pm:91> INFO - Globbed data source 'Bibliography.bib' to Bibliography.bib
-[256] Biber.pm:4455> INFO - Looking for bibtex format file 'Bibliography.bib' for section 0
-[414] Utils.pm:320> ERROR - Cannot find 'Bibliography.bib'!
-[414] Biber.pm:132> INFO - ERRORS: 1
+[83] biber-darwin:322> INFO - === Fri Sep 10, 2021, 11:19:48
+[98] Biber.pm:415> INFO - Reading 'main_slides.bcf'
+[192] Biber.pm:943> INFO - Found 0 citekeys in bib section 0
+[197] Utils.pm:304> WARN - The file 'main_slides.bcf' does not contain any citations!
+[206] bbl.pm:652> INFO - Writing 'main_slides.bbl' with encoding 'UTF-8'
+[206] bbl.pm:755> INFO - Output to main_slides.bbl
+[206] Biber.pm:128> INFO - WARNINGS: 1

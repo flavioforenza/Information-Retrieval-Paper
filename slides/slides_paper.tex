@@ -12,11 +12,35 @@
 \begin{frame}{GOAL}
     The purpose of this project is to be able to experiment with the use of 
     one of the most famous techniques, already present at the state of the 
-    art, able to "assist" the user in formulating a correct query: {\bfseries Language Modeling}. Query expansion can be done using this concept to return a corpus of relevant documents.
+    art, able to "assist" the user in formulating a correct query: {\bfseries Language 
+    Modelling}. Query expansion can be done using this concept to return a 
+    corpus of relevant documents. 
 \end{frame}
 
 \begin{frame}{DATASET DESCRIPTION}
-    
+    \begin{minipage}{\linewidth}
+        \centering
+        \begin{minipage}{0.45\linewidth}
+            The dataset used for the experiments is the famous \emph{Recipes1M+} \footnotemark[1], a collection 
+            created by MIT, consisting of more than one million culinary recipes. Of 
+            all these recipes, only a subset of 51235 documents of it was used due to their 
+            informative content which best fits the purpose of this study. The information 
+            about the line distributions for each recipe indicates that the instruction 
+            field contains a higher number than the information contained in the ingredients 
+            field.
+        \end{minipage}
+        \hspace{0.05\linewidth}
+        \begin{minipage}{0.47\linewidth}
+            \begin{figure}[h!]
+                \centering
+                \includegraphics[width =\linewidth]{displot.png}
+                \centering
+                \caption{Distributions of lines per ingredients and instructions.}
+                \label{distributions}
+            \end{figure}
+        \end{minipage}
+    \end{minipage}
+    \footnotetext[1]{\tiny J.Marin, A.Biswas, F.Ofli, N.Hynes, A.Salvador, Y.Aytar, I.Weber and A.Torralba, "Recipe1M+: A Dataset for Learning Cross-Modal Embeddings for Cooking Recipes and Food Images", IEEE Trans. Pattern Anal. Mach. Intell., 2019}
 \end{frame}
 
 \begin{frame}{RANKING GENERATION}
