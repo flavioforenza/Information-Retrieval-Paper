@@ -1,17 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'main_slides.blg'
-[79] biber-darwin:322> INFO - === Sat Sep 11, 2021, 09:06:49
-[93] Biber.pm:415> INFO - Reading 'main_slides.bcf'
-[184] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
-[197] Biber.pm:4256> INFO - Processing section 0
-[197] Utils.pm:75> INFO - Globbing data source 'Bibliography.bib'
-[197] Utils.pm:91> INFO - Globbed data source 'Bibliography.bib' to Bibliography.bib
-[206] Biber.pm:4455> INFO - Looking for bibtex format file 'Bibliography.bib' for section 0
-[208] bibtex.pm:1653> INFO - LaTeX decoding ...
-[224] bibtex.pm:1471> INFO - Found BibTeX data source 'Bibliography.bib'
-[251] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[251] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[251] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[251] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[253] bbl.pm:652> INFO - Writing 'main_slides.bbl' with encoding 'UTF-8'
-[254] bbl.pm:755> INFO - Output to main_slides.bbl
+[73] biber-darwin:322> INFO - === Sat Sep 11, 2021, 13:02:25
+[85] Biber.pm:415> INFO - Reading 'main_slides.bcf'
+[168] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
+[180] Biber.pm:4256> INFO - Processing section 0
+[180] Utils.pm:75> INFO - Globbing data source 'Bibliography.bib'
+[180] Utils.pm:91> INFO - Globbed data source 'Bibliography.bib' to Bibliography.bib
+[189] Biber.pm:4455> INFO - Looking for bibtex format file 'Bibliography.bib' for section 0
+[190] bibtex.pm:1653> INFO - LaTeX decoding ...
+[206] bibtex.pm:1471> INFO - Found BibTeX data source 'Bibliography.bib'
+[231] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[231] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[231] Biber.pm:4084> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[231] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
+[232] bbl.pm:652> INFO - Writing 'main_slides.bbl' with encoding 'UTF-8'
+[233] bbl.pm:755> INFO - Output to main_slides.bbl

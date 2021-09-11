@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{11}
+A.{Gutkin}.
+\newblock {\em Log-Linear Interpolation of Language Models}.
+\newblock PhD thesis, 11 2000.
+
 \bibitem{10}
 C.D.{Manning}, P.{Raghavan}, and H.{Schütze}.
 \newblock {\em Introduction to Information Retrieval}, chapter~12.
@@ -16,11 +21,6 @@ D.{Jurafsky} and J.H.{}.
 G.{Alexander}.
 \newblock {\em Log-Linear Interpolation of Language Models}.
 \newblock PhD thesis, 2000.
-
-\bibitem{11}
-A.~Gutkin.
-\newblock {\em Log-Linear Interpolation of Language Models}.
-\newblock PhD thesis, 11 2000.
 
 \bibitem{03}
 H.{Zaragoza}, D.{Hiemstra}, and M.{Tipping}.

@@ -3,11 +3,11 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: abbrv.bst
 Database file #1: Bibliography.bib
+Warning--empty school in 11
 Warning--can't use both author and editor fields in 10
 Warning--empty chapter and pages in 12
 Warning--empty publisher in 12
 Warning--empty school in 04
-Warning--empty school in 11
 Warning--empty booktitle in 03
 Warning--empty booktitle in 02
 Warning--empty booktitle in 06
@@ -17,7 +17,7 @@ Warning--empty booktitle in 05
 Warning--can't use both author and editor fields in 09
 You've used 16 entries,
             2118 wiz_defined-function locations,
-            579 strings with 5803 characters,
+            579 strings with 5796 characters,
 and the built_in function-call counts, 6139 in all, are:
 = -- 603
 > -- 255

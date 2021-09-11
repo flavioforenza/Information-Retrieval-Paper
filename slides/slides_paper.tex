@@ -172,8 +172,56 @@
     \footnotetext[3]{\tiny A.Gutnik, "Log-Linear Interpolation of Language Models", 2000}
 \end{frame}
 
-\begin{frame}{CORE}
-    
+\begin{frame}[fragile]{CORE}
+    \begin{algorithm}[H]
+        
+        \algsetup{linenosize=\tiny}
+        \scriptsize
+
+        \SetKwInOut{Input}{input}
+        \SetKwInOut{Output}{output}
+
+        \SetKwData{LMcoll}{LMcoll}
+        \SetKwData{rankLpl}{rankLpl}
+        \SetKwData{LMdocs}{LMdocs}
+        \SetKwData{PerplexityLpl}{perplexityLpl}
+        \SetKwData{rankLinInt}{rankLinInt}
+        \SetKwData{Lamb1}{lamb1}
+        \SetKwData{Lamb2}{lamb2}
+        \SetKwData{Break}{break}
+        \SetKwData{PerplexityInt}{perplexityInt}
+
+
+        \SetKwFunction{ComputeLMdocs}{ComputeLMdocs}
+        \SetKwFunction{ComputeLMcoll}{ComputeLMcoll}
+        \SetKwFunction{LplSmoot}{LplSmoot}
+        \SetKwFunction{Perplexity}{Perplexity}
+        \SetKwFunction{LinInt}{LinInt}
+
+        \Input{q}
+        \Output{final\_ranking}
+        \Parameter{LMtd}
+        \BlankLine
+
+        \For{$n \leftarrow 2$ \KwTo $10$}{
+            \LMdocs$\leftarrow$ \ComputeLMdocs{$n, query $}\;
+            \LMcoll$\leftarrow$ \ComputeLMcoll{$n, query $}\;
+            rankLpl $\leftarrow$ \LplSmoot($q,LMdocs$)\;
+            perplexityLpl $\leftarrow$ \PerplexityLpl($q, LMtd$)\;
+            \For{$i \leftarrow 0.1$ \KwTo $1.0$}{
+                lamb1 $\leftarrow$ i\;
+                lamb2 $\leftarrow$ 1-i\;
+                rankLinInt $\leftarrow$ \LinInt($q, LMdocs, LMcoll$)\;
+                perplexityInt $\leftarrow$ \PerplexityInt($q, LMtd$)\;
+                \If{lamb2==1}{break\;}       
+            }
+        }
+        \vdots
+        \emph{Search for the minimum index of the target document}\;
+        final\_ranking $\leftarrow$ min(rankLpl[i],rankLinInt[i])\;
+        \Return{final\_ranking}
+    \caption{IntervalRestriction\label{IR}}
+    \end{algorithm}
 \end{frame}
 
 \begin{frame}{TERM-TERM MATRIX}
