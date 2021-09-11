@@ -1,50 +1,64 @@
 \frametitle{CORE}
-\begin{algorithm}[H]
-
-        \algsetup{linenosize=\tiny}
-        \scriptsize
-
-        \SetKwInOut{Input}{input}
-        \SetKwInOut{Output}{output}
-
-        \SetKwData{LMcoll}{LMcoll}
-        \SetKwData{rankLpl}{rankLpl}
-        \SetKwData{LMdocs}{LMdocs}
-        \SetKwData{PerplexityLpl}{perplexityLpl}
-        \SetKwData{rankLinInt}{rankLinInt}
-        \SetKwData{Lamb1}{lamb1}
-        \SetKwData{Lamb2}{lamb2}
-        \SetKwData{Break}{break}
-        \SetKwData{PerplexityInt}{perplexityInt}
-
-
-        \SetKwFunction{ComputeLMdocs}{ComputeLMdocs}
-        \SetKwFunction{ComputeLMcoll}{ComputeLMcoll}
-        \SetKwFunction{LplSmoot}{LplSmoot}
-        \SetKwFunction{Perplexity}{Perplexity}
-        \SetKwFunction{LinInt}{LinInt}
-
-        \Input{q}
-        \Output{final\_ranking}
-        \Parameter{LMtd}
-        \BlankLine
-
-        \For{$n \leftarrow 2$ \KwTo $10$}{
-            \LMdocs$\leftarrow$ \ComputeLMdocs{$n, query $}\;
-            \LMcoll$\leftarrow$ \ComputeLMcoll{$n, query $}\;
-            rankLpl $\leftarrow$ \LplSmoot($q,LMdocs$)\;
-            perplexityLpl $\leftarrow$ \PerplexityLpl($q, LMtd$)\;
-            \For{$i \leftarrow 0.1$ \KwTo $1.0$}{
-                lamb1 $\leftarrow$ i\;
-                lamb2 $\leftarrow$ 1-i\;
-                rankLinInt $\leftarrow$ \LinInt($q, LMdocs, LMcoll$)\;
-                perplexityInt $\leftarrow$ \PerplexityInt($q, LMtd$)\;
-                \If{lamb2==1}{break\;}
-            }
-        }
-        \vdots
-        \emph{Search for the minimum index of the target document}\;
-        final\_ranking $\leftarrow$ min(rankLpl[i],rankLinInt[i])\;
-        \Return{final\_ranking}
-    \caption{IntervalRestriction\label{IR}}
-    \end{algorithm}
+\begin{minipage}{\linewidth}
+        \centering
+        \begin{minipage}{0.60\linewidth}
+            \begin{algorithm}[H]
+                \algsetup{linenosize=\tiny}
+                \scriptsize
+                \SetKwInOut{Input}{input}
+                \SetKwInOut{Output}{output}
+                \SetKwData{LMcoll}{LMcoll}
+                \SetKwData{rankLpl}{rankLpl}
+                \SetKwData{LMdocs}{LMdocs}
+                \SetKwData{PerplexityLpl}{perplexityLpl}
+                \SetKwData{rankLinInt}{rankLinInt}
+                \SetKwData{Lamb1}{lamb1}
+                \SetKwData{Lamb2}{lamb2}
+                \SetKwData{Break}{break}
+                \SetKwData{PerplexityInt}{perplexityInt}
+                \SetKwFunction{ComputeLMdocs}{ComputeLMdocs}
+                \SetKwFunction{ComputeLMcoll}{ComputeLMcoll}
+                \SetKwFunction{LplSmoot}{LplSmoot}
+                \SetKwFunction{Perplexity}{Perplexity}
+                \SetKwFunction{LinInt}{LinInt}
+                \Input{q}
+                \Output{final\_ranking}
+                \Parameter{LMtd}
+                \BlankLine
+                \For{$s \leftarrow 2$ \KwTo $10$}{
+                    \LMdocs$\leftarrow$ \ComputeLMdocs{$s, query $}\;
+                    \LMcoll$\leftarrow$ \ComputeLMcoll{$s, query $}\;
+                    rankLpl $\leftarrow$ \LplSmoot($q,LMdocs$)\;
+                    perplexityLpl $\leftarrow$ \PerplexityLpl($q, LMtd$)\;
+                    lamb1, lamb2 $\leftarrow$ 0\;
+                    \For{$i \leftarrow 0.1$ \KwTo $1.0$}{
+                        rankLinInt $\leftarrow$ \LinInt($q, LMdocs, LMcoll$)\;
+                        perplexityInt $\leftarrow$ \PerplexityInt($q, LMtd$)\;
+                        lamb1 $\leftarrow$ 0.1 + i\;
+                        lamb2 $\leftarrow$ 0.9 - i\;
+                        \If{lamb2==0}{break\;}
+                    }
+                }
+                \vdots
+                \emph{Search for the minimum index of the target document}\;
+                final\_ranking $\leftarrow$ min(rankLpl[i],rankLinInt[i])\;
+                \Return{final\_ranking}
+            \caption{Best Ranking\label{IR}}
+            \end{algorithm}
+        \end{minipage}
+        \hspace{0.01\linewidth}
+        \begin{minipage}{0.37\linewidth}
+            \scriptsize
+            where:
+            \begin{itemize}
+                \item \emph{q}: query
+                \item \emph{s}: skip-gram
+                \item \emph{final\_ranking}: ranking containing the target document in the position closest to the first
+                \item \emph{LMtd}: Language model of target document
+                \item \emph{LMdocs}: List of the language models of each document
+                \item \emph{LMcoll}: language model of the entire collection of documents
+                \item \emph{lamb1}: $\lambda_1$
+                \item \emph{lamb2}: $\lambda_2$
+            \end{itemize}
+        \end{minipage}
+    \end{minipage}

@@ -19,6 +19,29 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{12}{inbook}{}
+      \name{author}{2}{}{%
+        {{hash=d95c083b7fda0da5d3fca2fc53248722}{%
+           family={D.{Jurafsky}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=deaa993adb5bb29de13f501a8e623be4}{%
+           family={J.H.{}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{79b6950617147b32bfbdd03185064a9e}
+      \strng{fullhash}{79b6950617147b32bfbdd03185064a9e}
+      \strng{bibnamehash}{79b6950617147b32bfbdd03185064a9e}
+      \strng{authorbibnamehash}{79b6950617147b32bfbdd03185064a9e}
+      \strng{authornamehash}{79b6950617147b32bfbdd03185064a9e}
+      \strng{authorfullhash}{79b6950617147b32bfbdd03185064a9e}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition}
+      \field{volume}{3}
+      \field{year}{2008}
+    \endentry
     \entry{16}{article}{}
       \name{author}{4}{}{%
         {{hash=0c353a00103209864bf6c302efcd5665}{%

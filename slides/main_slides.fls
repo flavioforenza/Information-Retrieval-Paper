@@ -306,6 +306,8 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/algorithms/algorithmic.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/algorithms/algorithmic.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/dirtytalk/dirtytalk.sty
+INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/dirtytalk/dirtytalk.sty
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/beamer/beamerthemeDarmstadt.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/beamer/beamerthemeDarmstadt.sty
@@ -443,6 +445,7 @@ INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmssi9.tfm
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
