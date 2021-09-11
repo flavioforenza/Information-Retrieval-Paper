@@ -418,6 +418,9 @@ INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
+INPUT /Users/flavioforenza/Desktop/IR-paper/slides/images/vertical points.png
+INPUT /Users/flavioforenza/Desktop/IR-paper/slides/images/vertical points.png
+INPUT /Users/flavioforenza/Desktop/IR-paper/slides/images/vertical points.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
@@ -444,8 +447,11 @@ INPUT /Users/flavioforenza/Desktop/IR-paper/slides/main_slides.out
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/main_slides.out
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/main_slides.run.xml
 OUTPUT /Users/flavioforenza/Desktop/IR-paper/slides/main_slides.run.xml
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
@@ -455,3 +461,8 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
