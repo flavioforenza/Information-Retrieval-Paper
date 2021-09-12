@@ -375,9 +375,9 @@ INPUT /Users/flavioforenza/Desktop/IR-paper/slides/slides_paper.tex
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/slides_paper.tex
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
-INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
-INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
+INPUT /Users/flavioforenza/Desktop/IR-paper/slides/images/original_query.png
+INPUT /Users/flavioforenza/Desktop/IR-paper/slides/images/original_query.png
+INPUT /Users/flavioforenza/Desktop/IR-paper/slides/images/original_query.png
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -395,6 +395,12 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncms
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi8.tfm
+INPUT /Users/flavioforenza/Desktop/IR-paper/slides/images/expanded_query.png
+INPUT /Users/flavioforenza/Desktop/IR-paper/slides/images/expanded_query.png
+INPUT /Users/flavioforenza/Desktop/IR-paper/slides/images/expanded_query.png
+INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
+INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/images/displot.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/images/displot.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/images/displot.png

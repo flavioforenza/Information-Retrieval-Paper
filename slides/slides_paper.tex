@@ -15,6 +15,26 @@
     art, able to "assist" the user in formulating a correct query: {\bfseries Language 
     Modelling}. Query expansion can be done using this concept to return a 
     corpus of relevant documents. 
+    \begin{minipage}{\linewidth}
+        \centering
+        \begin{minipage}{0.45\linewidth}
+            \begin{figure}[h!]
+                \centering
+                \includegraphics[width =\linewidth]{original_query.png}
+                \centering
+                \caption{Euclidean distance between initial query and target document.}
+            \end{figure}
+        \end{minipage}
+        $\Rightarrow$
+        \begin{minipage}{0.45\linewidth}
+            \begin{figure}[h!]
+                \centering
+                \includegraphics[width =\linewidth]{expanded_query.png}
+                \centering
+                \caption{Euclidean distance between the expanded query and the target document.}
+            \end{figure}
+        \end{minipage}
+    \end{minipage}
 \end{frame}
 
 \begin{frame}{DATASET DESCRIPTION}
@@ -458,7 +478,14 @@
 \end{frame}
 
 \begin{frame}{CONCLUSIONS}
-    
+    Coming to the conclusions, it can be said that the generation of new 
+    queries occurs correctly. However, there are some points that need to be 
+    \underline{improved}, such as determining a method that sets an ad {\bfseries{\emph{hoc threshold}}} 
+    useful for generating each ranking of relevant documents. As for \underline{future 
+    work}, however, it would be interesting to develop a system of {\bfseries{hybrid 
+    parsers}}, fast and with low perplexity. In addition to this development, it 
+    will be interesting to adopt a new method of query expansion with terms 
+    present in a vocabulary such as {\bfseries{Wordnet}}.
 \end{frame}
 
 
