@@ -49,13 +49,13 @@
         \centering
         \begin{minipage}{0.45\linewidth}
             \begin{block}{\centering tf-idf}
-                \small $$ TfIdf(q_t,d) = tf_{q_t,d} \log\frac{N}{df_{q_t}}$$
+                \centering \small $ TfIdf(q_t,d) = tf_{q_t,d} \log\frac{N}{df_{q_t}}$
             \end{block}
         \end{minipage}
         \hspace{0.05\linewidth}
         \begin{minipage}{0.45\linewidth}
             \begin{block}{\centering Cosine similarity}
-                \small $$ cosine(q,d) = \frac{\sum_{i=1}^Nqd_i}{\sqrt{\sum_{i=1}^Nq^2}\sqrt{\sum_{i=1}^Nd_i^2}} $$
+                \centering \small $ cosine(q,d) = \frac{\sum_{i=1}^Nqd_i}{\sqrt{\sum_{i=1}^Nq^2}\sqrt{\sum_{i=1}^Nd_i^2}} $
             \end{block}
         \end{minipage}
     \end{minipage}
@@ -136,13 +136,13 @@
         \centering
         \begin{minipage}{0.45\linewidth}
             \begin{block}{\centering Laplace Smoothing}
-                \small $$ P(w_i|w_{i-1}) = \frac{count(w_{i-1})+1}{count(w_{i-1})+|V|} $$
+                \centering\small $ P(w_i|w_{i-1}) = \frac{count(w_{i-1})+1}{count(w_{i-1})+|V|} $
             \end{block}
         \end{minipage}
         \hspace{0.05\linewidth}
         \begin{minipage}{0.45\linewidth}
             \begin{block}{\centering Linear Interpolation Smoothing (Bi-grams)}
-                \scriptsize $$ P(w_i|w_{i-1}) = \lambda P(q|M_d) + (1-\lambda)P(q|M_c) $$
+                \centering \scriptsize $ P(w_i|w_{i-1}) = \lambda P(q|M_d) + (1-\lambda)P(q|M_c) $
             \end{block}
         \end{minipage}
     \end{minipage}
@@ -165,7 +165,7 @@
                 \centering
             \end{figure}
             \begin{block}{\centering Linear Interpolation Smoothing (Zero-grams)\footnotemark[3]}
-                \small $$ P(w_i) = \lambda \frac{1}{|V|} + (1-\lambda)P(w_i) $$
+                \centering \small $ P(w_i) = \lambda \frac{1}{|V|} + (1-\lambda)P(w_i) $
             \end{block}
         \end{minipage}
     \end{minipage}
@@ -267,30 +267,59 @@
 \end{frame}
 
 \begin{frame}{POSITIVE POINTWISE MUTUAL INFORMATIONS (PPMI)}
-    To evaluate the relationship between two words we can use the Pointwise 
+    Pointwise Mutual Information (PMI) was used to evaluate the relationship between two words.
     Mutual Informations (PMI).
-    \begin{block}{PPMI}
-        \small \emph{\say{PPMI draws on the intuition that the best way to weigh the association between two words is to ask how much more the two words co-occur in our corpus than we would have a priori expected them to appear by chance.}\footnotemark[2]}
+    \begin{block}{PMI}
+        \small \emph{\say{PMI draws on the intuition that the best way to weigh the association between two words is to ask how much more the two words co-occur in our corpus than we would have a priori expected them to appear by chance.}\footnotemark[2]}
     \end{block}
     In this case, its \emph{"Positive"} version (PPMI) was used to be able to remove negative values.
     \begin{minipage}{\linewidth}
         \centering
         \begin{minipage}{0.40\linewidth}
             \begin{block}{\centering PMI}
-                \small $$ PMI(x,y) = \log_2\frac{P(x,y)}{P(x)P(y)} $$
+                \centering \small $ PMI(x,y) = \log_2\frac{P(x,y)}{P(x)P(y)} $
             \end{block} 
         \end{minipage}
         \hspace{0.05\linewidth}
         \begin{minipage}{0.50\linewidth}
             \begin{block}{\centering PPMI}
-                \small $$ PPMI(x,y) = \max(\log_2\frac{P(x,y)}{P(x)P(y)}, 0) $$
+                \centering \small $ PPMI(x,y) = \max(\log_2\frac{P(x,y)}{P(x)P(y)}, 0) $
             \end{block}
         \end{minipage}
     \end{minipage}
 \end{frame}
 
 \begin{frame}{SINGULAR VALUE DECOMPOSITION (SVD)}
-    
+    The term-term matrix presents a serious problem that affects 
+    the performance of the system and the calculation of the cosine similarity: 
+    the {\bfseries{sparsity}}. In order to reduce the sparsity, the \emph{Singular 
+    Value Decomposition (SVD)} technique was applied.
+    \begin{minipage}{\linewidth}
+        \centering
+        \begin{minipage}{0.20\linewidth}
+            \begin{block}{}
+                \centering $ A = USV^T $
+            \end{block}
+            \begin{block}{}
+                \centering $ \mathcal{D} = U*S $
+            \end{block}
+            \begin{block}{}
+                \centering $ \mathcal{T} = S*V^T $
+            \end{block}
+        \end{minipage}
+        \hspace{0.05\linewidth}
+        \begin{minipage}{0.60\linewidth}
+            Where:
+            \begin{itemize}
+                \item \emph{A}: a $t\times d$ Term-Term Matrix decomposed into 3 sub-matrices.
+                \item \emph{U}: a $t\times m$ matrix
+                \item \emph{S}: a $m\times n$ matrix
+                \item \emph{$V^T$}: a $m\times d$ matrix
+                \item \emph{$\mathcal{D}$}: a $t\times m$ matrix containing all the terms of the relevant documents
+                \item \emph{$\mathcal{T}$}: a $m\times d$ matrix containing the query terms useful for calculating the cosine similarity with the terms present in $\mathcal{D}$
+            \end{itemize}
+        \end{minipage}
+    \end{minipage}
 \end{frame}
 
 \begin{frame}{QUERY EXPANSION}
