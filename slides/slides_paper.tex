@@ -336,12 +336,41 @@
     not cause the query to be generated.
 \end{frame}
 
-
 \begin{frame}{PERPLEXITY}
-    
+    \begin{minipage}{\linewidth}
+        \centering
+        \begin{minipage}{0.35\linewidth}
+            The perplexity is calculated 
+            between the initial 
+            query/new\_queries and the language 
+            models of the target document.The peculiarity 
+            highlighted by the 
+            system is that as the 
+            number of skip-grams increases, 
+            as the lambda parameters 
+            of Linear Interpolation 
+            Smoothing vary, 
+            the perplexity gradually 
+            decreases.
+        \end{minipage}
+        \hspace{0.01\linewidth}
+        \begin{minipage}{0.55\linewidth}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width =\linewidth]{perplexity.png}
+                \centering
+                \caption{Variation of the perplexity value based on the change of the step \emph{s} and of the $\lambda_1$ and $\lambda_2$ values of interpolated smoothing.}
+                \label{perplexity}
+            \end{figure}
+        \end{minipage}
+    \end{minipage}
 \end{frame}
 
 \begin{frame}{SYSTEM EVALUATION WITH DIFFERENT PARSERS}
+    
+\end{frame}
+
+\begin{frame}{PERPLEXITY AND DISTANCE EVALUATION WITH DIFFERENT PARSERS}
     
 \end{frame}
 
