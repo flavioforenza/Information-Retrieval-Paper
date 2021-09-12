@@ -353,7 +353,10 @@
     Where \emph{q} represents the number of tokens of the query and \emph{$\#sim\_words_i$} 
     represents the number of tokens most similar to each single token \emph{i} of the 
     query. Obviously some checks are made (eg word repetition), which may 
-    not cause the query to be generated.
+    not cause the query to be generated. \bfseries All new queries will be 
+    processed by the algorithm (\emph{Core}) in order to determine the best 
+    ranking of relevant documents, which has the target document in 
+    the first positions.
 \end{frame}
 
 \begin{frame}{PERPLEXITY}
