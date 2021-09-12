@@ -112,15 +112,6 @@ INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/local/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/tools/xspace.sty
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/tools/xspace.sty
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/relsize/relsize.sty
-INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/relsize/relsize.sty
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /Users/flavioforenza/Desktop/IR-paper/main.aux
@@ -183,6 +174,7 @@ INPUT /Users/flavioforenza/Desktop/IR-paper/chapters/Experimental Results.tex
 INPUT /Users/flavioforenza/Desktop/IR-paper/images/displot.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/images/displot.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/images/displot.png
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /Users/flavioforenza/Desktop/IR-paper/images/11 keras/11 DOCUMENTS WITH MIXED ENTITIES (SCRAPE+USDA).png
 INPUT /Users/flavioforenza/Desktop/IR-paper/images/11 keras/11 DOCUMENTS WITH MIXED ENTITIES (SCRAPE+USDA).png
 INPUT /Users/flavioforenza/Desktop/IR-paper/images/11 keras/11 DOCUMENTS WITH MIXED ENTITIES (SCRAPE+USDA).png

@@ -319,12 +319,23 @@
                 \item \emph{$\mathcal{T}$}: a $m\times d$ matrix containing the query terms useful for calculating the cosine similarity with the terms present in $\mathcal{D}$
             \end{itemize}
         \end{minipage}
-    \end{minipage}
+    \end{minipage}9
 \end{frame}
 
 \begin{frame}{QUERY EXPANSION}
-    
+    After calculating the cosine similarity between the word vectors of the 
+    relevant documents and the word vectors of the query, a maximum of ten 
+    most similar words are selected for each single word in the query. Starting 
+    from this assumption, by making a combination between the pairs of 
+    words ($q_t$, $d_n$), the maximum number of new queries that can be 
+    generated is: 
+    $$ \#Queries = \prod_i^q (\#sim\_words_i) $$
+    Where \emph{q} represents the number of tokens of the query and \emph{$\#sim\_words_i$} 
+    represents the number of tokens most similar to each single token \emph{i} of the 
+    query. Obviously some checks are made (eg word repetition), which may 
+    not cause the query to be generated.
 \end{frame}
+
 
 \begin{frame}{PERPLEXITY}
     
