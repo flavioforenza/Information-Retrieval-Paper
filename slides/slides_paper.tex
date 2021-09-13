@@ -80,7 +80,7 @@
             \end{block}
         \end{minipage}
     \end{minipage}
-    \footnotetext[1]{\scriptsize All documents (instructions of each recipe) and queries (recipe title) underwent a normalization process (removing stopwords / punctuation and applying lemmatization) before generating the ranking.}
+    \footnotetext[1]{\scriptsize \bfseries All documents (instructions of each recipe) and queries (recipe title) underwent a normalization process (removing stopwords / punctuation and applying lemmatization) before generating the ranking.}
 \end{frame}
 
 \begin{frame}{RANKING EVALUATION}
@@ -290,7 +290,6 @@
 
 \begin{frame}{POSITIVE POINTWISE MUTUAL INFORMATIONS (PPMI)}
     Pointwise Mutual Information (PMI) was used to evaluate the relationship between two words.
-    Mutual Informations (PMI).
     \begin{block}{PMI}
         \small \emph{\say{PMI draws on the intuition that the best way to weigh the association between two words is to ask how much more the two words co-occur in our corpus than we would have a priori expected them to appear by chance.}\footnotemark[2]}
     \end{block}
@@ -341,7 +340,7 @@
                 \item \emph{$\mathcal{T}$}: a $m\times d$ matrix containing the query terms useful for calculating the cosine similarity with the terms present in $\mathcal{D}$
             \end{itemize}
         \end{minipage}
-    \end{minipage}9
+    \end{minipage}
 \end{frame}
 
 \begin{frame}{QUERY EXPANSION}
@@ -354,11 +353,11 @@
     $$ \#Queries = \prod_i^q (\#sim\_words_i) $$
     Where \emph{q} represents the number of tokens of the query and \emph{$\#sim\_words_i$} 
     represents the number of tokens most similar to each single token \emph{i} of the 
-    query. Obviously some checks are made (eg word repetition), which may 
-    not cause the query to be generated. \bfseries All new queries will be 
-    processed by the algorithm (\emph{Core}) in order to determine the best 
-    ranking of relevant documents, which has the target document in 
-    the first positions.
+    query. Obviously some checks are made (eg word repetition), Obviously 
+    some checks are made (eg word repetition), which could invalidate the 
+    generation of the query. \bfseries All new queries will be processed by the 
+    algorithm (\emph{Core}) in order to determine the best ranking of relevant 
+    documents, which has the target document in the first positions.
 \end{frame}
 
 \begin{frame}{PERPLEXITY}

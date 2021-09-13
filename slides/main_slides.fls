@@ -433,6 +433,7 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam1
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/sansmathaccent/mathkerncmssi9.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcss0600.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/images/11 DOCUMENTS WITH MIXED ENTITIES (SCRAPE+USDA).png
@@ -450,7 +451,6 @@ INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
 OUTPUT /Users/flavioforenza/Desktop/IR-paper/slides/main_slides.vrb
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/main_slides.vrb
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/main_slides.vrb
-INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmssi8.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /Users/flavioforenza/Desktop/IR-paper/slides/logoUnimi2.png
