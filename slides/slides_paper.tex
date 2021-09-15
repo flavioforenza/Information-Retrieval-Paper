@@ -80,7 +80,7 @@
             \end{block}
         \end{minipage}
     \end{minipage}
-    \footnotetext[1]{\scriptsize \bfseries All documents (instructions of each recipe) and queries (recipe title) underwent a normalization process (removing stopwords / punctuation and applying lemmatization) before generating the ranking.}
+    \footnotetext[1]{\scriptsize \bfseries All documents (instructions of each recipe) and queries (recipe title) will undergo tokenization and normalization processes (removing stopwords / punctuation and applying lemmatization) before generating the ranking.}
 \end{frame}
 
 \begin{frame}{RANKING EVALUATION}
@@ -141,13 +141,14 @@
     than or equal to the weight assigned to the target document, a language 
     models will be constructed consisting of a sequence of \emph{bi-grams}, with an 
     initial \emph{skip-grams} equal to two, with the relative count of every 
-    occurrence.    
+    occurrence. Subsequently it will be possible to calculate the \emph{sentence 
+    probability} (\ref{MLE}) between the query and each single language model.   
     \begin{block}{\centering Sentence probability (Bi-gram) and MLE}
         \begin{eqnarray}\label{MLE}
             P(q|d) & \approx & P(q|M_d) \nonumber \\
                    & \approx & \prod_i^n{P(w_i|w_{i-1})} \nonumber \\
-                   & \approx & \frac{count(w_i,w_{i-1})}{\sum_{j=1}^n count(w_j,w_{i-1})} \nonumber \\
-                   & = & \frac{count(w_i, w_{i-1})}{count(w_{i-1})}
+                   & \approx & \prod_i^n\frac{count(w_i,w_{i-1})}{\sum_{j=1}^n count(w_j,w_{i-1})} \nonumber \\
+                   & = & \prod_i^n\frac{count(w_i, w_{i-1})}{count(w_{i-1})}
         \end{eqnarray}
     \end{block}
 \end{frame}
