@@ -314,7 +314,7 @@
 \begin{frame}{SINGULAR VALUE DECOMPOSITION (SVD)}
     The term-term matrix presents two types of problems that affect the 
     performance and the calculation of cosine similarity: {\bfseries{high 
-    dimensionality}} and {\bfseries{sparsity}}. In order to reduce these problems, the 
+    dimensionality}} and {\bfseries{sparsity}}. In order to reduce the dimensionality, the 
     \emph{Singular Value Decomposition (SVD)} technique was applied.
     \begin{minipage}{\linewidth}
         \centering
@@ -486,11 +486,14 @@
     Coming to the conclusions, it can be said that the generation of new 
     queries occurs correctly. However, there are some points that need to be 
     \underline{improved}, such as determining a method that sets an ad {\bfseries{\emph{hoc threshold}}} 
-    useful for generating each ranking of relevant documents. As for \underline{future 
-    work}, however, it would be interesting to develop a system of {\bfseries{hybrid 
-    parsers}}, fast and with low perplexity. In addition to this development, it 
-    will be interesting to adopt a new method of query expansion with terms 
-    present in a vocabulary such as {\bfseries{Wordnet}}.
+    useful for generating each ranking of relevant documents. Another 
+    improvement concerns the reduction of the {\bfseries{sparsity}} of the term-term 
+    matrix. This problem can be solved by applying techniques such as the 
+    \emph{stochastic gradient descent}. As for \underline{future work}, however, it would be 
+    interesting to develop a system of {\bfseries{hybrid parsers}}, fast and with low 
+    perplexity. In addition to this development, it will be interesting to adopt 
+    a new method of query expansion with terms present in a vocabulary 
+    such as {\bfseries{Wordnet}}.
 \end{frame}
 
 

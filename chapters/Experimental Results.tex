@@ -111,7 +111,7 @@ We have come
 to the point of asking: How can the whole system be evaluated? To answer 
 this question, four different libraries able to tokenize documents and queries 
 were used: {\bfseries{Spacy}}, {\bfseries{Gensim}}, {\bfseries{Nltk}} and {\bfseries{Keras}}. Each of these produces different 
-results in terms of perplexity, number of queries generated, sparsity index 
+results in terms of perplexity, number of queries generated, computation time
 (Tab. \ref{performance}) and rankings(Tab. \ref{Index}). As can be seen from the data, each method has a different 
 benefit. What each method has in common is the positioning of the target 
 document in the first position of the ranking.
@@ -139,22 +139,22 @@ document in the first position of the ranking.
 \begin{table}[h!]
     \centering
     \begin{adjustbox}{max width=\textwidth}
-    \begin{tabular}{|c|c|c|c|}
+    \begin{tabular}{|c|c|c|}
         \hline
-        \bfseries{Method} & \bfseries{\#Queries} &\bfseries{Avg. Sparsity Reduction} &\bfseries{Time}\\
+        \bfseries{Method} & \bfseries{\#Queries} &\bfseries{Time}\\
         \hline
         \hline
-        Keras & 14.900 & 0.721 &\bfseries{\emph{Low}}\\
+        Keras & 14.900 &\bfseries{\emph{Low}}\\
         \hline
-        Nltk & 14.900 & 0.717 &\bfseries{\emph{Low}}\\
+        Nltk & 14.900 &\bfseries{\emph{Low}}\\
         \hline
-        Spacy & 19.010 & \bfseries{0.741} &\emph{High}\\
+        Spacy & 19.010 &\emph{High}\\
         \hline
-        Gensim & \bfseries{22.090} & 0.730 &\emph{Medium}\\
+        Gensim & \bfseries{22.090} &\emph{Medium}\\
         \hline
     \end{tabular}
     \end{adjustbox}
-    \caption{Performance in terms of number of queries (\#Queries), Average Sparsity reduction with the SVD method and computation time.}
+    \caption{Performance in terms of number of queries (\#Queries) and computation time.}
     \label{performance}
 \end{table}
 Looking at the results obtained with an additional five queries (\ref{DP}), for a total 

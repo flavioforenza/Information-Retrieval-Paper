@@ -124,14 +124,14 @@ corpora. To find the words most similar to those in the query, the cosine
 similarity is calculated on the first ten word vectors that have the highest 
 positive PPMI values. Eventually, each token in the query will have a maximum 
 of ten expansion terms. Thanks to this, we are already seeing how 
-query expansion can be done. Moving on, there is a problem to solve before we can 
-calculate the similarity of the cosine: the \emph{sparsity} of the matrix. In order to 
-obtain a good similarity, relatively low at the computational level, another 
-concept has been implemented: \emph{Singular Value Decomposition (SVD)}. The 
-idea of applying SVD on a term-term matrix was proposed by \cite{13}. Switching 
-from sparse to dense vectors allows for better similarity comparisons. The 
-SVD allows to decompose the term-term matrix (A), of dimensions $txd$, into 
-three matrices \cite{14} (\ref{decomposition}):
+query expansion can be done. Moving on, there is a problem to solve before 
+we can calculate the similarity of the cosine: the \emph{high dimensionality} 
+of the matrix. In order to obtain a good similarity, relatively low at the 
+computational level, another concept has been implemented: \emph{Singular Value 
+Decomposition (SVD)}. The idea of applying SVD on a term-term matrix was 
+proposed by \cite{13}. Switching from sparse to dense vectors allows for better 
+similarity comparisons. The SVD allows to decompose the term-term matrix 
+(A), of dimensions $txd$, into three matrices \cite{14} (\ref{decomposition}):
 \begin{equation}\label{decomposition}
     A = USV^T
 \end{equation}
