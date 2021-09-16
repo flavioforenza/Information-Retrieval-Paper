@@ -354,8 +354,7 @@
     $$ \#Queries = \prod_i^q (\#sim\_words_i) $$
     Where \emph{q} represents the number of tokens of the query and \emph{$\#sim\_words_i$} 
     represents the number of tokens most similar to each single token \emph{i} of the 
-    query. Obviously some checks are made (eg word repetition), Obviously 
-    some checks are made (eg word repetition), which could invalidate the 
+    query. Obviously some checks are made (eg word repetition), which could invalidate the 
     generation of the query. \bfseries All new queries will be processed by the 
     algorithm (\emph{Core}) in order to determine the best ranking of relevant 
     documents, which has the target document in the first positions.
@@ -421,23 +420,23 @@
     \end{table}
     \begin{table}[h!]
         \centering
-        \begin{adjustbox}{max width=6cm}
-        \begin{tabular}{|c|c|c|c|}
+        \begin{adjustbox}{max width=4cm}
+        \begin{tabular}{|c|c|c|}
             \hline
-            \bfseries{Method} & \bfseries{\#Queries} &\bfseries{Avg. Sparsity Reduction} &\bfseries{Time}\\
+            \bfseries{Method} & \bfseries{\#Queries} &\bfseries{Time}\\
             \hline
             \hline
-            Keras & 14.900 & 0.721 &\bfseries{\emph{Low}}\\
+            Keras & 14.900 &\bfseries{\emph{Low}}\\
             \hline
-            Nltk & 14.900 & 0.717 &\bfseries{\emph{Low}}\\
+            Nltk & 14.900 &\bfseries{\emph{Low}}\\
             \hline
-            Spacy & 19.010 & \bfseries{0.741} &\emph{High}\\
+            Spacy & 19.010 &\emph{High}\\
             \hline
-            Gensim & \bfseries{22.090} & 0.730 &\emph{Medium}\\
+            Gensim & \bfseries{22.090} &\emph{Medium}\\
             \hline
         \end{tabular}
         \end{adjustbox}
-        \caption{Performance in terms of number of queries (\#Queries), Average Sparsity reduction with the SVD method and computation time.}
+        \caption{Performance in terms of number of queries (\#Queries) and computation time.}
         \label{performance}
     \end{table}
 \end{frame}
