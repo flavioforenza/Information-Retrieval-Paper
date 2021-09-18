@@ -22,7 +22,7 @@
                 \centering
                 \includegraphics[width =\linewidth]{original_query.png}
                 \centering
-                \caption{Euclidean distance between initial query and target document.}
+                \caption{Distance between initial query and target document in a PCA space.}
             \end{figure}
         \end{minipage}
         $\Rightarrow$
@@ -31,7 +31,7 @@
                 \centering
                 \includegraphics[width =\linewidth]{expanded_query.png}
                 \centering
-                \caption{Euclidean distance between the expanded query and the target document.}
+                \caption{Distance between the expanded query and the target document in a PCA space.}
             \end{figure}
         \end{minipage}
     \end{minipage}
@@ -137,8 +137,7 @@
 \end{frame}
 
 \begin{frame}{LANGUAGE MODELS}
-    For each document, present in the ranking, having a threshold greater 
-    than or equal to the weight assigned to the target document, a language 
+    For each document, present in the ranking, a language 
     models will be constructed consisting of a sequence of \emph{bi-grams}, with an 
     initial \emph{skip-grams} equal to two, with the relative count of every 
     occurrence. Subsequently it will be possible to calculate the \emph{sentence 
@@ -399,7 +398,7 @@
      of the ranking.
     \begin{table}[h!]
         \centering
-        \begin{adjustbox}{max width=6cm}
+        \begin{adjustbox}{max width=7cm}
         \begin{tabular}{|c||c|c||c|c||c|c||c|c||c|c||}
             \hline
             \multirow{2}{*}{\bfseries{Method}} & \multicolumn{2}{c||}{\bfseries{\RN{1}}} & \multicolumn{2}{c||}{\bfseries{\RN{2}}} & \multicolumn{2}{c||}{\bfseries{\RN{3}}} & \multicolumn{2}{c||}{\bfseries{\RN{4}}} & \multicolumn{2}{c||}{\bfseries{\RN{5}}}\\            & \bfseries{T} & \bfseries{P} & \bfseries{T} & \bfseries{P} & \bfseries{T} & \bfseries{P} & \bfseries{T} & \bfseries{P} & \bfseries{T} & \bfseries{P}\\
@@ -420,7 +419,7 @@
     \end{table}
     \begin{table}[h!]
         \centering
-        \begin{adjustbox}{max width=4cm}
+        \begin{adjustbox}{max width=3.5cm}
         \begin{tabular}{|c|c|c|}
             \hline
             \bfseries{Method} & \bfseries{\#Queries} &\bfseries{Time}\\

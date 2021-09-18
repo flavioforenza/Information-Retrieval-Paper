@@ -90,7 +90,7 @@ the \emph{perplexity} level existing between the query word set $W = \{w_1, w_2,
 the target document present in the ranking of relevant documents returned 
 by the tf-idf model will be calculated(\ref{perplexity}) \cite{12}.
 \begin{equation}\label{perplexity}
-    pp(W) = \sqrt[n]{\prod_{i=1}^N\frac{1}{P(w_i|w_{i-1})}} 
+    pp(W) = \sqrt[N]{\prod_{i=1}^N\frac{1}{P(w_i|w_{i-1})}} 
 \end{equation}
 After obtaining the best ranking, the next step is based on building a \emph{term-
 term matrix} \cite{12}, where the terms in question are both those of the query and 
