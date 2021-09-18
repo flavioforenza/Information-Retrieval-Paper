@@ -22,7 +22,7 @@
                 \centering
                 \includegraphics[width =\linewidth]{original_query.png}
                 \centering
-                \caption{Distance between initial query and target document in a PCA space.}
+                \caption{Distance between initial query and the target document in a PCA space.}
             \end{figure}
         \end{minipage}
         $\Rightarrow$
@@ -137,11 +137,11 @@
 \end{frame}
 
 \begin{frame}{LANGUAGE MODELS}
-    For each document, present in the ranking, a language 
-    models will be constructed consisting of a sequence of \emph{bi-grams}, with an 
-    initial \emph{skip-grams} equal to two, with the relative count of every 
-    occurrence. Subsequently it will be possible to calculate the \emph{sentence 
-    probability} (\ref{MLE}) between the query and each single language model.   
+    For each document, inside the ranking, a language model is built. 
+    Each language model is initially composed of a sequence of terms equal 
+    to two \emph{(bi-grams)} and their occurrence. Subsequently it will be possible 
+    to calculate the \emph{sentence probability} (\ref{MLE}) between the query and each 
+    single language model.   
     \begin{block}{\centering Sentence probability (Bi-gram) and MLE}
         \begin{eqnarray}\label{MLE}
             P(q|d) & \approx & P(q|M_d) \nonumber \\
@@ -492,6 +492,40 @@
     perplexity. In addition to this development, it will be interesting to adopt 
     a new method of query expansion with terms present in a vocabulary 
     such as {\bfseries{Wordnet}}.
+\end{frame}
+
+\begin{frame}{}
+    \setbeamertemplate{button}{\tikz
+    \node[
+    inner xsep=10pt,
+    draw=blue,
+    fill=black,
+    rounded corners=6pt]  {\Large\insertbuttontext};}
+    \newcommand{\tabitem}{%
+    \usebeamertemplate{itemize item}\hspace*{\labelsep}}
+    \begin{center}
+        \Huge \underline{{\bfseries{THANKS FOR LISTENING}}}   
+    \end{center}
+    \vspace{0.2\linewidth}
+    \begin{minipage}{\linewidth}
+        \centering
+        \begin{minipage}{0.45\linewidth}
+            \begin{figure}[htbp]
+                \centering
+                \includegraphics[width =0.8\linewidth]{GitHub.png}
+                \centering
+            \end{figure} 
+        \end{minipage}
+        \begin{minipage}{0.45\linewidth}
+                \href{https://github.com/flavioforenza/Information-Retrieval-project.git}{\beamergotobutton{Link Project}} \\
+                \href{https://github.com/flavioforenza/Information-Retrieval-Paper.git}{\beamergotobutton{Link Paper}} \\
+                \href{https://github.com/flavioforenza/Information-Retrieval-Paper/tree/main/slides}{\beamergotobutton{Link Presentation}}
+        \end{minipage}
+    \end{minipage}
+
+    
+    
+    
 \end{frame}
 
 
