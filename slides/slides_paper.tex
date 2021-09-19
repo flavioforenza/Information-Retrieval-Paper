@@ -65,7 +65,13 @@
 
 \begin{frame}{RANKING GENERATION}
     \renewcommand{\thefootnote}{\fnsymbol{footnote}}
-    The first step is based on choosing a random query\footnotemark[1], which resembles the title of one of the existing recipes. Subsequently, thanks to the combination of the tf-idf method and the cosine similarity metric, it is possible to generate the first ranking of documents ordered according to relevance with the query. The threshold chosen, for the selection of the most relevant documents, will correspond to the weight assigned by the tf-idf to the target document.
+    The first step is based on choosing a random query\footnotemark[1], which resembles the 
+    title of one of the existing recipes (the \emph{target document}). Subsequently, 
+    thanks to the combination of the tf-idf method and the cosine similarity 
+    metric, it is possible to generate the first ranking of documents ordered 
+    according to relevance with the query. The threshold chosen, for the 
+    selection of the most relevant documents, will correspond to the weight 
+    assigned by the tf-idf to the target document.
     \begin{minipage}{\linewidth}
         \centering
         \begin{minipage}{0.45\linewidth}
